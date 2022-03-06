@@ -22,7 +22,7 @@ include_once('defaults/head.php');
             Sporten is goed voor sterkere spieren en voor de conditie. Sporcenter HealthOne heeft verschillende sportapparaten om mee te kunnen werken aan je conditie.
         </p>
         <hr>
-<!--        <h4 class="text-warning">Onze openingstijden :</h4>
+        <h4 class="text-warning">Onze openingstijden :</h4>
         <ul class="list-group">
             <a class="list-group-item list-group-item-action">Maandag : 07:00 - 20:00 </a>
             <a class="list-group-item list-group-item-action">Dinsdag : 08:00 - 20:00 </a>
@@ -32,24 +32,6 @@ include_once('defaults/head.php');
             <a class="list-group-item list-group-item-action">Zaterdag : 08:00 - 13:00 </a>
             <a class="list-group-item list-group-item-action">Zondag : 08:00 - 13:00 </a>
         </ul>
--->
-            <div class="row featurette">
-                <div class="col-md-7 order-md-2">
-                    <table>
-                        <tr>
-                            <th>Dag</th>
-                            <th>Openingstijden</th>
-                            <th>Sluitingstijden</th>
-                        </tr>
-                        <?php foreach($times as $time):?>
-                            <tr>
-                                <td><?=$time->day?></td>
-                                <td><?=$time->opening_time?></td>
-                                <td><?=$time->closing_time?></td>
-                            </tr>
-                        <?php endforeach ?>
-                    </table>
-                </div>
 
             <br>
         <hr>
