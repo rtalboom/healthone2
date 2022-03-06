@@ -13,7 +13,7 @@ global $categoryId;
     <div class="container" style="background-color:#fbf2d1">
         <?php
         include_once('defaults/header.php');
-        include_once('defaults/menu.php');
+        include_once('defaults/navbar.php');
         include_once('defaults/pictures.php');
         ?>
         <nav aria-label="breadcrumb">
@@ -35,6 +35,7 @@ global $categoryId;
             </p>
         </div>
         <hr>
+<!--            review (kan alleen een review achter laten als je bent ingelogt-->
         <?php if (!$_SESSION["isLoggedIn"]){
             echo "
             <div class='alert alert-info' role='alert'>

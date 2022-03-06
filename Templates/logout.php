@@ -13,7 +13,7 @@ include_once('defaults/head.php');
     <div class="container" style="background-color:#fbf2d1">
         <?php
         include_once('defaults/header.php');
-        include_once('defaults/menu.php');
+        include_once('defaults/navbar.php');
         include_once('defaults/pictures.php');
 
         ?>

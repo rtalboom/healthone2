@@ -1,5 +1,7 @@
 <?php
-class shophours
+
+
+class times
 {
     public $id;
     public $day;

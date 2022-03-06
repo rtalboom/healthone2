@@ -8,9 +8,10 @@ include_once('defaults/head.php');
     <div class="container" style="background-color:#fbf2d1">
         <?php
         include_once('defaults/header.php');
-        include_once('defaults/menu.php');
+        include_once('defaults/navbar.php');
         include_once('defaults/pictures.php');
         ?>
+<!--        log in pagina-->
         <div style="width: 95%; margin: auto; ">
             <h4 class="text-warning">Healthone Member Portaal</h4>
             <?=$message?>
@@ -29,7 +30,7 @@ include_once('defaults/head.php');
                     <br>
                     <button type="submit" name="login" class="btn btn-warning text-light" >Submit</button>
                     <br><br>
-                </form>
+
             </div>
         </div>
         <hr>

@@ -8,7 +8,7 @@ include_once('defaults/head.php');
     <div class="container" style="background-color:#fbf2d1">
         <?php
         include_once('defaults/header.php');
-        include_once('defaults/menu.php');
+        include_once('defaults/navbar.php');
         include_once('defaults/pictures.php');
 
         ?>
@@ -20,7 +20,7 @@ include_once('defaults/head.php');
                 <li class="breadcrumb-item"><a class="text-black" href="/category/<?= $categoryId ?>"><?= $category ?></a></li>
             </ol>
         </nav>
-
+<!--        hier worden alle sport apparaten weergegeven -->
         <h3 class="text-warning">Apparaten</h3>
         <div class="row gy-4" style="width: 95%; margin: auto;">
             <?php global $products; ?>

@@ -10,7 +10,7 @@ global $categories;
     <div class="container" style="background-color:#fbf2d1">
         <?php
         include_once('defaults/header.php');
-        include_once('defaults/menu.php');
+        include_once('defaults/navbar.php');
         include_once('defaults/pictures.php');
 
         ?>
@@ -21,11 +21,11 @@ global $categories;
                 <li class="breadcrumb-item"><a class="text-black" href="/categories">Categories</a></li>
             </ol>
         </nav>
-
+<!--        hier worden de 4 categorien weergegeven-->
         <h3 class="text-warning">Categoriën</h3>
         <div class="row gy-4">
             <?php foreach ($categories as $category) : ?>
-                <div class="col-sm-6 col-md-6 ">
+                <div class="col-sm-4 col-md-3">
                     <div class="card">
                         <div class="card-body text-center">
                             <div class="card-title mb-3">

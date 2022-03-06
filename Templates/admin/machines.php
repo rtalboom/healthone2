@@ -12,6 +12,7 @@ include_once('../Templates\defaults\head.php');
         include_once('../Templates/defaults/pictures.php');
         global $products;
         ?>
+
         <h3 class="text-warning">Machine Control Center</h3>
         <div class="row gy-4" style="width: 95%; margin: auto;" >
         <?=$message?>

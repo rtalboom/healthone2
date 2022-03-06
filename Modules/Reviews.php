@@ -1,5 +1,5 @@
 <?php
-// TODO Zorg dat de methodes goed ingevuld worden met de juiste queries.
+
 function getReviews(int $product_id)
 {
     global $pdo;

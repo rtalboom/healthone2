@@ -8,14 +8,14 @@ include_once('defaults/head.php');
     <div class="container" style="background-color:#fbf2d1">
         <?php
         include_once('defaults/header.php');
-        include_once('defaults/menu.php');
+        include_once('defaults/navbar.php');
         include_once('defaults/pictures.php');
-
         ?>
         <div style="width: 95%; margin: auto;">
         <h2 class="text-warning">Welkom <?= $_SESSION['user']->name;?>!</h2>
         <div class="container rounded">
         <form  method="post" enctype="multipart/form-data">
+<!--            profiel van de gebruiker-->
             <h5 class="text-warning">Profiel</h5>
             <div class="form-group">
                 <img src="<?= $_SESSION['user']->image;?>" class="img-fluid rounded float-left" style= "height:50px" alt="Responsive image">
@@ -23,6 +23,9 @@ include_once('defaults/head.php');
                 <small class="text-warning">Hier kunt u uw profielafbeelding wijzigen.</small>
             </div>
             <br>
+<!--            profielfoto veranderen ^-->
+
+<!--            naam en email veranderen-->
             <div class="form-group">
                 <label class="text">Wijzig Naam:</label>
                 <input type="text" class="form-control" name="name" aria-describedby="emailHelp" placeholder="Enter name" value="<?= $_SESSION['user']->name;?>">
@@ -36,6 +39,7 @@ include_once('defaults/head.php');
             <button type="submit" name="changeprofilebutton" class="btn btn-warning text-light" >Opslaan</button>
         </form>
             <hr>
+<!--            wachtwoord veranderen-->
         <form  method="post">
             <h5 class="text-warning">Beveiliging</h5>
             <div class="form-group">
@@ -52,6 +56,7 @@ include_once('defaults/head.php');
         </form>
     </div>
     <hr>
+<!--            de reviews die de gebruiker heeft geschreven-->
     <h2 class="text-warning">Uw reviews</h2>
         <?php
         $reviews = getUserReviews($_SESSION['user']->id);

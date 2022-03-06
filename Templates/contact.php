@@ -7,7 +7,7 @@ include_once('defaults/head.php');
     <div class="container" style="background-color:#fbf2d1">
         <?php
         include_once('defaults/header.php');
-        include_once('defaults/menu.php');
+        include_once('defaults/navbar.php');
         include_once('defaults/pictures.php');
         ?>
     <div style="width: 95%; margin: auto;">
@@ -18,6 +18,7 @@ include_once('defaults/head.php');
             E-Mail : info@healthone.com
         </p>
         <hr>
+<!--        stuurt een bericht naar de admin-->
         <h4 class="text-warning">Contact opnemen</h4>
         <div class="container rounded">
             <form method="post">
